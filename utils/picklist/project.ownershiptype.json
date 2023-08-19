@@ -1,0 +1,14 @@
+{
+	"Private": {
+		"value": "Private",
+		"label": "Private"
+	},
+	"State": {
+		"value": "State",
+		"label": "State"
+	},
+	"Local Government": {
+		"value": "Local Government",
+		"label": "Local Government"
+	}
+}

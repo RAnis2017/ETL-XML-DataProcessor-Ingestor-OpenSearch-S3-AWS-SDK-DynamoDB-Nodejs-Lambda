@@ -1,0 +1,18 @@
+{
+	"Retail (Other)": {
+		"value": "Retail (Other)",
+		"label": "Retail (Other)"
+	},
+	"Bridge": {
+		"value": "Bridge",
+		"label": "Bridge"
+	},
+	"Clinic/Medical Office": {
+		"value": "Clinic/Medical Office",
+		"label": "Clinic/Medical Office"
+	},
+	"Dock/Pier": {
+		"value": "Dock/Pier",
+		"label": "Dock/Pier"
+	}
+}

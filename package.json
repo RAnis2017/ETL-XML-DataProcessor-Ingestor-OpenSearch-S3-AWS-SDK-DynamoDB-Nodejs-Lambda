@@ -1,0 +1,27 @@
+{
+  "name": "project-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec serverless offline start",
+    "deploy": "serverless deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opensearch-project/opensearch": "^2.3.1",
+    "aws-sdk": "^2.1410.0",
+    "busboy": "^1.6.0",
+    "crypto": "^1.0.1",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1",
+    "xml2js": "^0.6.0"
+  },
+  "devDependencies": {
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-offline": "^12.0.4"
+  }
+}

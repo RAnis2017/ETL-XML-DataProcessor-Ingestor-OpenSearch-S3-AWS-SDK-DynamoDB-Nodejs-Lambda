@@ -1,0 +1,45 @@
+service: eser-processing
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: ap-south-2
+  stage: dev
+  environment:
+    AWS_ACCESS_KEY_ID_NODE: .env.{AWS_ACCESS_KEY_ID_NODE}
+    AWS_SECRET_ACCESS_KEY_NODE: .env.{AWS_SECRET_ACCESS_KEY_NODE}
+    AWS_REGION_NODE: .env.{AWS_REGION_NODE}
+    AWS_BUCKET_NAME: .env.{AWS_BUCKET_NAME}
+    AWS_BUCKET_DONE_NAME: .env.{AWS_BUCKET_DONE_NAME}
+    AWS_ACCOUNT_ID: .env.{AWS_ACCOUNT_ID}
+
+functions:
+  upload:
+    handler: uploadFile.handler
+    events:
+      - http:
+          path: upload
+          method: post
+          cors: true
+  process:
+    handler: processFiles.handler
+    events:
+      # - schedule: rate(5 hours)
+      - schedule: cron(55 20 * * *)
+    timeout: 12
+  sync:
+    handler: syncESData.handler
+    events:
+      # - schedule: rate(5 hours)
+      - schedule: cron(36 22 * * *)
+    timeout: 12
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+  - serverless-apigw-binary
+custom:
+  apigwBinary:
+    types:
+      - '*/*'
+

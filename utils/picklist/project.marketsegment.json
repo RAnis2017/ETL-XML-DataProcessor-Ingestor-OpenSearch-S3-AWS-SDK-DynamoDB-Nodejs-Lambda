@@ -1,0 +1,14 @@
+{
+	"General Building (Commercial)": {
+		"value": "General Building (Commercial)",
+		"label": "General Building (Commercial)"
+	},
+	"Engineering": {
+		"value": "Engineering",
+		"label": "Engineering"
+	},
+	"General Building (Medical)": {
+		"value": "General Building (Medical)",
+		"label": "General Building (Medical)"
+	}
+}

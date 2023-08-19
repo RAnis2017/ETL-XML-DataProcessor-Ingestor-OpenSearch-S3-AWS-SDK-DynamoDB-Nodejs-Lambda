@@ -1,0 +1,18 @@
+{
+	"Start": {
+		"value": "Start",
+		"label": "Start"
+	},
+	"Pre-Design": {
+		"value": "Pre-Design",
+		"label": "Pre-Design"
+	},
+	"Abandoned": {
+		"value": "Abandoned",
+		"label": "Abandoned"
+	},
+	"Subcontract Award": {
+		"value": "Subcontract Award",
+		"label": "Subcontract Award"
+	}
+}
